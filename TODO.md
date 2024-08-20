@@ -1,4 +1,8 @@
+dump but leave 1stack of seeds
+farm.dumpResultToContainer
 
+transition if inventory almost full
+inventory.isFull(stackThreshold=1)
 
-dumping selected items in inventory to chest
-go to dropped 
+transition if inventory < 1
+inventory.isItemSlotLessThanOrEqualTo(cropnames)

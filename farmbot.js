@@ -13,8 +13,10 @@ if(enabled){
     // init here
     blockCrops = farmlib.blockCrops;
     farmPosVariableName = "farmposvarname";
+    pos1 = {x:-22,y:66,z:-34};
+    pos2 = {x:-67,y:63,z:-46};
     // state
-    iteratePosState = new smlib.IteratePosState(name,-22, 66, -34, -67, 63, -46, farmPosVariableName);  
+    iteratePosState = new smlib.IteratePosState(name, pos1, pos2, farmPosVariableName);  
     pathMoveToState = new smlib.PathMoveToState(name,farmPosVariableName);
     harvestAndPlantState = new smlib.HarvestAndPlantState(name,farmPosVariableName);
     // transition
